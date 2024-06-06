@@ -1,4 +1,4 @@
-def convert_temperature(frm, to, num):
+def convert_temperature(num, frm, to):
     result = 0
     if frm == "f":
         if to == "c":
