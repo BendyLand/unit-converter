@@ -3,37 +3,36 @@ import distance
 import mass
 
 def test_mass():
-    m1 = 8
-    u1 = "g"
-    u12 = "mg"
-    m2 = 150
-    u2 = "oz"
-    u22 = "g"
-    res1 = mass.convert_mass(m1, "g", "mg")
-    res2 = mass.convert_mass(m2, "oz", "g")
-    print(f"{m1}{u1} = {res1}{u12}")
-    print(f"{m2}{u2} = {res2}{u22}")
+    mass1 = 8
+    mass2 = 150
+    mass3 = 2
+    res1 = mass.convert_mass(mass1, "g", "mg")
+    res2 = mass.convert_mass(mass2, "oz", "g")
+    res3 = mass.convert_mass(mass3, "t", "lb")
+    print(f"{mass1}g = {res1}mg")
+    print(f"{mass2}oz = {res2}g")
+    print(f"{mass3}t = {res3}lb")
 
 
 def test_temperature():
     temp1 = 61
-    result1 = temperature.convert_temperature(temp1, "f", "c")
     temp2 = 11
-    result2 = temperature.convert_temperature(temp2, "c", "f")
-    print(f"{temp1}f = {result1}c")
-    print(f"{temp2}c = {result2}f")
+    res1 = temperature.convert_temperature(temp1, "f", "c")
+    res2 = temperature.convert_temperature(temp2, "c", "f")
+    print(f"{temp1}f = {res1}c")
+    print(f"{temp2}c = {res2}f")
 
 
 def test_distance():
     dist1 = 2735
-    result1 = distance.convert_distance(dist1, "ft", "km")
     dist2 = 47
-    result2 = distance.convert_distance(dist2, "yard", "in")
     dist3 = 1241
-    result3 = distance.convert_distance(dist3, "mm", "yd")
     dist4 = 1
-    result4 = distance.convert_distance(dist3, "mi", "mm")
-    print(f"{dist1}ft = {result1}km")
-    print(f"{dist2}yd = {result2}in")
-    print(f"{dist3}mm = {result3}yd")
-    print(f"{dist4}mi = {result4}mm")
+    res1 = distance.convert_distance(dist1, "ft", "km")
+    res2 = distance.convert_distance(dist2, "yard", "in")
+    res3 = distance.convert_distance(dist3, "mm", "yd")
+    res4 = distance.convert_distance(dist3, "mi", "mm")
+    print(f"{dist1}ft = {res1}km")
+    print(f"{dist2}yd = {res2}in")
+    print(f"{dist3}mm = {res3}yd")
+    print(f"{dist4}mi = {res4}mm")

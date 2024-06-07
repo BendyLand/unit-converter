@@ -37,19 +37,19 @@ def normalize(num, unit):
     if unit_type == "metric":
         match unit:
             case "mg":
-                result = num * 1000
+                result = num / 1000
             case "g":
                 result = num
             case "kg":
-                result = num / 1000
+                result = num * 1000
     elif unit_type == "imperial":
         match unit:
             case "oz":
-                result = num * 16
+                result = num / 16
             case "lb":
                 result = num
             case "t":
-                result = num / 2000
+                result = num * 2000
     else:
         print(f"Unrecognized unit: '{unit}'")
         raise ValueError
