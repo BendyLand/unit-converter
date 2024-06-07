@@ -27,24 +27,27 @@ def convert_temperature(num, frm, to):
     to = abbreviate(to)
     result = 0
     if frm == "f":
-        if to == "c":
-            result = (num - 32) * 5 / 9 # f to c 
-        elif to == "k":
-            result = ((num - 32) * 5 / 9) + 273.15
-        elif to == "f":
-            result = num
+        match to:
+            case "c":
+                result = (num - 32) * 5 / 9 # f to c 
+            case "k":
+                result = ((num - 32) * 5 / 9) + 273.15
+            case "f":
+                result = num
     elif frm == "c":
-        if to == "f":
-            result = (num * 9 / 5) + 32 # c to f 
-        elif to == "k":
-            result = num + 273.15
-        elif to == "c":
-            result = num
+        match to:
+            case "f":
+                result = (num * 9 / 5) + 32 # c to f 
+            case "k":
+                result = num + 273.15
+            case "c":
+                result = num
     elif frm == "k":
-        if to == "f":
-            result = (num - 273.15) * 9 / 5 + 32
-        elif to == "c":
-            result = num - 273.15
-        elif to == "k":
-            result = num
+        match to:
+            case "f":
+                result = (num - 273.15) * 9 / 5 + 32
+            case "c":
+                result = num - 273.15
+            case "k":
+                result = num
     return result
