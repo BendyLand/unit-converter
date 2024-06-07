@@ -5,7 +5,7 @@
 A general purpose unit converter which can convert between various units of:
  - Temperature
  - Distance
- - ~~Weight~~
+ - Weight/Mass
  - ~~Time~~
  - ~~Volume~~
  - ~~Area~~
