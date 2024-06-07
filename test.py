@@ -2,9 +2,9 @@ import temperature
 import distance
 
 def test_temperature():
-    temp1 = 32
+    temp1 = 61
     result1 = temperature.convert_temperature(temp1, "f", "c")
-    temp2 = 61
+    temp2 = 11
     result2 = temperature.convert_temperature(temp2, "c", "f")
     print(f"{temp1}f = {result1}c")
     print(f"{temp2}c = {result2}f")
