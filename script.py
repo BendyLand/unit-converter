@@ -8,6 +8,8 @@ def main():
     test.test_distance()
     print("\nTesting masses:")
     test.test_mass()
+    print("\nTesting times:")
+    test.test_my_time()
     print()
 
 
@@ -15,14 +17,6 @@ if __name__ == "__main__":
     main()
 
 """
-    Time:
-        Second (s)
-        Minute (min)
-        Hour (h)
-        Day
-        Week
-        Month
-        Year
     Volume:
         Liter (L)
         Milliliter (mL)

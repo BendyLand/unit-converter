@@ -1,5 +1,6 @@
 def abbreviate(unit):
     result = ""
+    unit = unit.lower()
     match unit:
         case "gram":
             result = "g"
@@ -30,7 +31,6 @@ def check_unit_type(unit):
 
 
 def normalize(num, unit):
-    unit = unit.lower()
     unit = abbreviate(unit)
     result = 0
     unit_type = check_unit_type(unit)

@@ -1,6 +1,19 @@
 import temperature
 import distance
 import mass
+import my_time
+
+def test_my_time():
+    time1 = 50
+    time2 = 6
+    time3 = 36709
+    res1 = my_time.convert_time(time1, "day", "second")
+    res2 = my_time.convert_time(time2, "h", "month")
+    res3 = my_time.convert_time(time3, "s", "day")
+    print(f"{time1}day = {res1}s")
+    print(f"{time2}h = {res2}month")
+    print(f"{time3}s = {res3}day")
+
 
 def test_mass():
     mass1 = 8

@@ -7,6 +7,7 @@ def validate_units(frm, to):
 
 def abbreviate(unit):
     result = ""
+    unit = unit.lower()
     match unit:
         case "fahrenheit":
             result = "f"

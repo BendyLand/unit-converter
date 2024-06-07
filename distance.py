@@ -65,7 +65,6 @@ def normalize(num, unit):
     else:
         print(f"Unrecognized unit: '{unit}'")
         raise ValueError
-    result = round(result, 2)
     return result
 
 
