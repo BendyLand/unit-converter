@@ -1,5 +1,19 @@
 import temperature
 import distance
+import mass
+
+def test_mass():
+    m1 = 8
+    u1 = "g"
+    u12 = "mg"
+    m2 = 150
+    u2 = "oz"
+    u22 = "g"
+    res1 = mass.convert_mass(m1, "g", "mg")
+    res2 = mass.convert_mass(m2, "oz", "g")
+    print(f"{m1}{u1} = {res1}{u12}")
+    print(f"{m2}{u2} = {res2}{u22}")
+
 
 def test_temperature():
     temp1 = 61

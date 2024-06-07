@@ -6,6 +6,8 @@ def main():
     test.test_temperature()
     print("\nTesting distances:")
     test.test_distance()
+    print("\nTesting masses:")
+    test.test_mass()
     print()
 
 
@@ -13,14 +15,6 @@ if __name__ == "__main__":
     main()
 
 """
-2DO:
-    Mass/Weight:
-        Gram (g)
-        Kilogram (kg)
-        Milligram (mg)
-        Ton (t)
-        Pound (lb)
-        Ounce (oz)    
     Time:
         Second (s)
         Minute (min)

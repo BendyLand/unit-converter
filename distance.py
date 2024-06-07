@@ -30,8 +30,6 @@ def check_unit_type(unit):
         result = "metric"
     elif unit in imperial:
         result = "imperial"
-    else:
-        raise ValueError
     return result
 
 
