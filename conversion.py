@@ -34,7 +34,7 @@ def select_conversion(arg):
 
 def convert(args):
     conversion = select_conversion(args[2])
-    num = int(args[1])
+    num = float(args[1])
     unit1 = args[2]
     unit2 = args[3]
     result = ""
