@@ -1,0 +1,46 @@
+Temperature:
+    Fahrenheit (f)
+    Celsius (c)
+    Kelvin (k)
+Distance:
+    Millimeter (mm)
+    Centimeter (cm)
+    Meter (m)
+    Kilometer (km)
+    Inch (in)
+    Foot (ft)
+    Yard (yd)
+    Mile (mi)
+Mass:
+    Milligram (mg)
+    Gram (g)
+    Kilogram (kg)
+    Ounce (oz)
+    Pound (lb)
+    US Ton (t)
+Time:
+    Second (s)
+    Minute (min)
+    Hour (h)
+    Day
+    Week
+    Month
+    Year
+Volume:
+    Liter (L)
+    Milliliter (mL)
+    Cubic meter (m³)
+    Gallon (gal)
+    Quart (qt)
+    Pint (pt)
+    Fluid ounce (fl oz)
+Area:
+    Square meter (m²)
+    Square kilometer (km²)
+    Square centimeter (cm²)
+    Hectare (ha)
+    Acre
+Speed:
+    Meters per second (m/s)
+    Kilometers per hour (km/h)
+    Miles per hour (mph)

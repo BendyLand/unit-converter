@@ -4,6 +4,7 @@ import mass
 import my_time
 
 def test_my_time():
+    print("\nTesting times:")
     time1 = 50
     time2 = 6
     time3 = 36709
@@ -16,6 +17,7 @@ def test_my_time():
 
 
 def test_mass():
+    print("\nTesting masses:")
     mass1 = 8
     mass2 = 150
     mass3 = 2
@@ -28,6 +30,7 @@ def test_mass():
 
 
 def test_temperature():
+    print("\nTesting temperatures:")
     temp1 = 61
     temp2 = 11
     res1 = temperature.convert_temperature(temp1, "f", "c")
@@ -37,6 +40,7 @@ def test_temperature():
 
 
 def test_distance():
+    print("\nTesting distances:")
     dist1 = 2735
     dist2 = 47
     dist3 = 1241
