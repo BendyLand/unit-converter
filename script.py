@@ -2,15 +2,15 @@ import test
 import conversion
 
 def main():
-    args, ok = conversion.check_cl_args()
-    if ok:
+    args, cl_call = conversion.check_cl_args()
+    if cl_call:
         conversion.convert(args)
-        return
-    test.test_temperature()
-    test.test_distance()
-    test.test_mass()
-    test.test_my_time()
-    print()
+    else:
+        test.test_temperature()
+        test.test_distance()
+        test.test_mass()
+        test.test_my_time()
+        print()
 
 
 if __name__ == "__main__":
