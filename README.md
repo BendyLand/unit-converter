@@ -37,12 +37,12 @@ uc 8848.86 m ft # 8848.86m = 29033.11ft (height of Mt. Everest)
 uc 100 yd m     # 100yd    = 91.41m (length of American Football field)
 
 # Weight/Mass
-uc 70 kg lb     # 70kg   = 154.32lb (average human weight)
+uc 70 kg lb     # 70kg    = 154.32lb (average human weight)
 uc 12000 lb t   # 12000lb = 6.0t (average elephant weight)
-uc 12.4 kg lb   # 12.4kg = 27.34lb (standard gold bar weight)
+uc 12.4 kg lb   # 12.4kg  = 27.34lb (standard gold bar weight)
 
 # Time
-uc 24 h min     # 24h = 1440.0min (1 day in minutes)
-uc 1 year day   # 1year = 365.0day (1 year in days)
+uc 24 h min     # 24h    = 1440.0min (1 day in minutes)
+uc 1 year day   # 1year  = 365.0day (1 year in days)
 uc 8.3 min s    # 8.3min = 498.0s (time for light to travel from Sun to Earth)
 ```
