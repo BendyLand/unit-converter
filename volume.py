@@ -1,4 +1,3 @@
-
 def check_unit_type(unit):
     metric = ["L", "mL", "m3"]
     imperial = ["gal", "qt", "ft3"]
@@ -39,7 +38,7 @@ def normalize(num, unit):
         case "L":
             result = num * 1000
         case "mL":
-            result = num 
+            result = num
         case "m3":
             result = num * 1000000
         case "gal":
@@ -51,8 +50,8 @@ def normalize(num, unit):
         case _:
             print(f"Unrecognized unit: '{unit}'")
     return result
-    
-    
+
+
 def convert_volume(num, frm, to):
     frm = abbreviate(frm)
     to = abbreviate(to)
@@ -62,7 +61,7 @@ def convert_volume(num, frm, to):
         case "L":
             result = num / 1000
         case "mL":
-            result = num 
+            result = num
         case "m3":
             result = num / 1000000
         case "gal":

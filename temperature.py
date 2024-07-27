@@ -20,7 +20,7 @@ def convert_temperature(num, frm, to):
     if frm == "f":
         match to:
             case "c":
-                result = (num - 32) * 5 / 9 
+                result = (num - 32) * 5 / 9
             case "k":
                 result = ((num - 32) * 5 / 9) + 273.15
             case "f":
@@ -28,7 +28,7 @@ def convert_temperature(num, frm, to):
     elif frm == "c":
         match to:
             case "f":
-                result = (num * 9 / 5) + 32 
+                result = (num * 9 / 5) + 32
             case "k":
                 result = num + 273.15
             case "c":
