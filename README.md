@@ -22,6 +22,8 @@ alias uc='python3 /absolute/path/to/unit-converter/script.py'
 Then it can be called like so:
 ```shell
 uc <value> <unit_from> <unit_to>
+uc -h # to display valid units
+uc -t # to run and print the tests
 
 # Temperature
 uc 0 c f        # 0c    = 32.0f (freezing temp)
