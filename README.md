@@ -7,7 +7,7 @@ A general purpose unit converter which can convert between various units of:
  - Distance
  - Weight/Mass
  - Time
- - ~~Volume~~
+ - Volume
  - ~~Area~~
  - ~~Speed~~
 
