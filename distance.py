@@ -113,8 +113,10 @@ def convert_from_metric(num, to):
     result = round(result, 2)
     return result
 
-
+# yard -> in
 def convert_distance(num, frm, to):
+    frm = abbreviate(frm)
+    to = abbreviate(to)
     num = normalize(num, frm)
     unit_type = check_unit_type(frm)
     match unit_type:
@@ -122,3 +124,5 @@ def convert_distance(num, frm, to):
             return convert_from_imperial(num, to)
         case "metric":
             return convert_from_metric(num, to)
+        case _:
+            print("What")

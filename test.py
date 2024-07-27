@@ -4,6 +4,21 @@ import mass
 import my_time
 import volume
 import area
+import speed
+
+
+def test_speed():
+    print("\nTesting speeds:")
+    s1 = 60
+    s2 = 100
+    s3 = 25
+    res1 = speed.convert_speed(s1, "mph", "km/h")
+    res2 = speed.convert_speed(s2, "m/s", "mph")
+    res3 = speed.convert_speed(s3, "km/h", "m/s")
+    print(f"{s1}mph = {res1}km/h")
+    print(f"{s2}m/s = {res2}mph")
+    print(f"{s3}km/h = {res3}m/s")
+    
 
 def test_area():
     print("\nTesting areas:")
@@ -90,5 +105,6 @@ def run_tests():
     test_my_time()
     test_volume()
     test_area()
+    test_speed()
     print()
     
