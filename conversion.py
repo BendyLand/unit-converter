@@ -12,6 +12,7 @@ def display_valid_units():
     masses = ["Masses:", "mg", "g", "kg", "oz", "lb", "t"]
     times = ["Times:", "s", "min", "h", "day", "week", "month", "year"]
     volumes = ["Volumes:", "mL", "L", "m3", "qt", "gal", "ft3"]
+    areas = ["Areas:", "in2", "ft2", "yd2", "mi2", "m2", "km2"]
     units = [temps, dists, masses, times, volumes]
     for unit in units:
         for item in unit:

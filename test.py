@@ -3,13 +3,27 @@ import distance
 import mass
 import my_time
 import volume
+import area
+
+def test_area():
+    print("\nTesting areas:")
+    a1 = 10
+    a2 = 537
+    a3 = 45
+    res1 = area.convert_area(a1, "square foot", "square yard")
+    res2 = area.convert_area(a2, "in2", "ft2")
+    res3 = area.convert_area(a3, "mi2", "km2")
+    print(f"{a1}ft^2 = {res1}yd^2")
+    print(f"{a2}in^2 = {res2}ft^2")
+    print(f"{a3}mi^2 = {res3}km^2")
+    
 
 def test_volume():
     print("\nTesting volumes:")
     vol1 = 2
     vol2 = 10000
     vol3 = 10
-    res1 = volume.convert_volume(vol1, "ft3", "gal")
+    res1 = volume.convert_volume(vol1, "cubic foot", "gal")
     res2 = volume.convert_volume(vol2, "gal", "L")
     res3 = volume.convert_volume(vol3, "gal", "qt")
     print(f"{vol1}ft^3 = {res1}gal")
@@ -75,5 +89,6 @@ def run_tests():
     test_mass()
     test_my_time()
     test_volume()
+    test_area()
     print()
     
