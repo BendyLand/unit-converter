@@ -23,8 +23,8 @@ def abbreviate(unit):
 
 
 def check_unit_type(unit):
-    metric = ["m", "km", "cm", "mm", "meter", "kilometer", "centimeter", "millimeter"]
-    imperial = ["in", "ft", "yd", "mi", "inch", "feet", "yard", "mile"]
+    metric = ["m", "km", "cm", "mm"]
+    imperial = ["in", "ft", "yd", "mi"]
     result = ""
     if unit in metric:
         result = "metric"

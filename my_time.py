@@ -1,4 +1,3 @@
-
 def abbreviate(unit):
     result = ""
     unit = unit.lower()
@@ -7,6 +6,8 @@ def abbreviate(unit):
             result = "s"
         case "minute":
             result = "min"
+        case "hour":
+            result = "h"
         case _:
             result = unit
     return result
@@ -14,6 +15,7 @@ def abbreviate(unit):
 
 def normalize(num, unit):
     result = 0
+    unit = abbreviate(unit)
     match unit:
         case "s":
             result = num / 3600
@@ -57,18 +59,3 @@ def convert_time(num, frm, to):
             result = num / 8760
     result = round(result, 2)
     return result
-
-
-"""
-    Time:
-        Second (s)
-        Minute (min)
-        Hour (h)
-        Day
-        Week
-        Month
-        Year
-"""
-
-
-
