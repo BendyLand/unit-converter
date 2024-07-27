@@ -13,7 +13,7 @@ def check_unit_type(unit):
 def abbreviate(unit):
     if len(unit) > 3:
         unit = unit.lower()
-    result = unit
+    result = ""
     match unit:
         case "liter":
             result = "L"
@@ -50,7 +50,6 @@ def normalize(num, unit):
             result = num * 28320
         case _:
             print(f"Unrecognized unit: '{unit}'")
-            raise ValueError
     return result
     
     
@@ -74,4 +73,3 @@ def convert_volume(num, frm, to):
             result = num / 28320
     result = round(result, 3)
     return result
-

@@ -1,5 +1,6 @@
 def abbreviate(unit):
     result = ""
+    unit = unit.lower()
     match unit:
         case "meter":
             result = "m"
@@ -64,7 +65,6 @@ def normalize(num, unit):
         result = temp
     else:
         print(f"Unrecognized unit: '{unit}'")
-        raise ValueError
     return result
 
 

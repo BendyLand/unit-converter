@@ -52,7 +52,6 @@ def normalize(num, unit):
                 result = num * 2000
     else:
         print(f"Unrecognized unit: '{unit}'")
-        raise ValueError
     result = round(result, 2)
     return result
 
@@ -103,5 +102,3 @@ def convert_mass(num, frm, to):
             return convert_from_imperial(num, to)
         case "metric":
             return convert_from_metric(num, to)
-
-

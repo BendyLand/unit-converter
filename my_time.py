@@ -33,7 +33,6 @@ def normalize(num, unit):
             result = num * 8760
         case _:
             print(f"Unrecognized unit: '{unit}'")
-            raise ValueError
     return result
 
 

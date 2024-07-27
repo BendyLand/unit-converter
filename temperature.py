@@ -1,10 +1,3 @@
-def validate_units(frm, to):
-    units = ["f", "fahrenheit", "c", "celsius", "k", "kelvin"]
-    frm = frm.lower()
-    to = to.lower()
-    return (frm in units) and (to in units)
-
-
 def abbreviate(unit):
     result = ""
     unit = unit.lower()
@@ -21,9 +14,6 @@ def abbreviate(unit):
 
 
 def convert_temperature(num, frm, to):
-    valid_units = validate_units(frm, to)
-    if not valid_units:
-        raise ValueError
     frm = abbreviate(frm)
     to = abbreviate(to)
     result = 0
