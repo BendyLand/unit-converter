@@ -2,6 +2,20 @@ import temperature
 import distance
 import mass
 import my_time
+import volume
+
+def test_volume():
+    print("\nTesting volumes:")
+    vol1 = 2
+    vol2 = 10000
+    vol3 = 10
+    res1 = volume.convert_volume(vol1, "ft3", "gal")
+    res2 = volume.convert_volume(vol2, "gal", "L")
+    res3 = volume.convert_volume(vol3, "gal", "qt")
+    print(f"{vol1}ft^3 = {res1}gal")
+    print(f"{vol2}gal = {res2}L")
+    print(f"{vol3}gal = {res3}qt")
+
 
 def test_my_time():
     print("\nTesting times:")
@@ -53,3 +67,13 @@ def test_distance():
     print(f"{dist2}yd = {res2}in")
     print(f"{dist3}mm = {res3}yd")
     print(f"{dist4}mi = {res4}mm")
+
+
+def run_tests():
+    test_temperature()
+    test_distance()
+    test_mass()
+    test_my_time()
+    test_volume()
+    print()
+    
