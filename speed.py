@@ -17,8 +17,8 @@ def abbreviate(unit):
         case _:
             result = unit
     return result
-    
-    
+
+
 def normalize(num, unit):
     result = 0
     match unit:

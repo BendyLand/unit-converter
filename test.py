@@ -18,7 +18,7 @@ def test_speed():
     print(f"{s1}mph = {res1}km/h")
     print(f"{s2}m/s = {res2}mph")
     print(f"{s3}km/h = {res3}m/s")
-    
+
 
 def test_area():
     print("\nTesting areas:")
@@ -31,7 +31,7 @@ def test_area():
     print(f"{a1}ft^2 = {res1}yd^2")
     print(f"{a2}in^2 = {res2}ft^2")
     print(f"{a3}mi^2 = {res3}km^2")
-    
+
 
 def test_volume():
     print("\nTesting volumes:")
@@ -107,4 +107,3 @@ def run_tests():
     test_area()
     test_speed()
     print()
-    

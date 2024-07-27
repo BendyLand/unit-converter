@@ -42,13 +42,13 @@ def normalize(num, unit):
     if unit_type == "metric":
         temp = 0
         match unit:
-            case "m": 
+            case "m":
                 temp = num
-            case "km": 
+            case "km":
                 temp = num * 1000
-            case "cm": 
+            case "cm":
                 temp = num / 100
-            case "mm": 
+            case "mm":
                 temp = num / 1000
         result = temp
     elif unit_type == "imperial":
@@ -58,9 +58,9 @@ def normalize(num, unit):
                 temp = num / 36
             case "ft":
                 temp = num / 3
-            case "yd": 
-                temp = num 
-            case "mi": 
+            case "yd":
+                temp = num
+            case "mi":
                 temp = num * 1760
         result = temp
     else:
@@ -113,7 +113,7 @@ def convert_from_metric(num, to):
     result = round(result, 2)
     return result
 
-# yard -> in
+
 def convert_distance(num, frm, to):
     frm = abbreviate(frm)
     to = abbreviate(to)
@@ -124,5 +124,3 @@ def convert_distance(num, frm, to):
             return convert_from_imperial(num, to)
         case "metric":
             return convert_from_metric(num, to)
-        case _:
-            print("What")

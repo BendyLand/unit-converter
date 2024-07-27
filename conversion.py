@@ -8,6 +8,7 @@ import area
 import speed
 import test
 
+
 def display_valid_units():
     temps = ["Temperatures:", "f", "c", "k"]
     dists = ["Distances:", "mm", "cm", "m", "km", "in", "ft", "yd", "mi"]
@@ -35,8 +36,8 @@ def check_cl_args():
         return sys.argv, True
     else:
         return None, False
-        
-        
+
+
 def select_conversion(arg):
     temps = ["f", "c", "k"]
     dists = ["mm", "cm", "m", "km", "in", "ft", "yd", "mi"]
