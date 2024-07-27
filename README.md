@@ -26,13 +26,13 @@ uc -h # to display valid units
 uc -t # to run and print the tests
 
 # Temperature
-uc 0 c f        # 0c    = 32.0f (freezing temp)
-uc 98.6 f c     # 98.6f = 37.0c (human body temp)
+uc 0 c f         # 0c    = 32.0f (freezing temp)
+uc 98.6 f c      # 98.6f = 37.0c (human body temp)
 
 # Distance
-uc 26.2 mi km   # 26.2mi   = 42.15km (marathon distance)
-uc 8848.86 m ft # 8848.86m = 29033.11ft (height of Mt. Everest)
-uc 100 yd m     # 100yd    = 91.41m (length of American Football field)
+uc 26.2 mi km    # 26.2mi   = 42.15km (marathon distance)
+uc 8848.86 m ft  # 8848.86m = 29033.11ft (height of Mt. Everest)
+uc 100 yd m      # 100yd    = 91.41m (length of American Football field)
 
 # Weight/Mass
 uc 70 kg lb      # 70kg    = 154.32lb (average human weight)
