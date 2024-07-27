@@ -4,6 +4,8 @@ import mass
 import my_time
 import sys
 import volume
+import area
+import speed
 import test
 
 def display_valid_units():
@@ -13,7 +15,8 @@ def display_valid_units():
     times = ["Times:", "s", "min", "h", "day", "week", "month", "year"]
     volumes = ["Volumes:", "mL", "L", "m3", "qt", "gal", "ft3"]
     areas = ["Areas:", "in2", "ft2", "yd2", "mi2", "m2", "km2"]
-    units = [temps, dists, masses, times, volumes]
+    speeds = ["Speeds:", "m/s", "km/h", "mph"]
+    units = [temps, dists, masses, times, volumes, areas, speeds]
     for unit in units:
         for item in unit:
             print(item, end=" ")
@@ -40,6 +43,8 @@ def select_conversion(arg):
     masses = ["mg", "g", "kg", "oz", "lb", "t"]
     times = ["s", "min", "h", "day", "week", "month", "year"]
     volumes = ["mL", "L", "m3", "qt", "gal", "ft3"]
+    areas = ["in2", "ft2", "yd2", "mi2", "m2", "km2"]
+    speeds = ["m/s", "km/h", "mph"]
     result = ""
     if arg in temps:
         result = "temperature"
@@ -51,9 +56,12 @@ def select_conversion(arg):
         result = "time"
     elif arg in volumes:
         result = "volume"
+    elif arg in areas:
+        result = "area"
+    elif arg in speeds:
+        result = "speed"
     else:
         print("Unknown conversion.")
-        raise ValueError
     return result
 
 
@@ -74,4 +82,8 @@ def convert(args):
             result = my_time.convert_time(num, unit1, unit2)
         case "volume":
             result = volume.convert_volume(num, unit1, unit2)
+        case "area":
+            result = area.convert_area(num, unit1, unit2)
+        case "speed":
+            result = speed.convert_speed(num, unit1, unit2)
     print(f"{args[1]}{unit1} = {result}{unit2}")
