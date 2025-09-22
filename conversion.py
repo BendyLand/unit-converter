@@ -9,18 +9,19 @@ import speed
 import test
 
 
-def display_valid_units():
+def display_valid_units(prefix=""):
+    header = ["Unit Name    ", "Abbreviations"]
     temps = ["Temperatures:", "f", "c", "k"]
     dists = ["Distances:", "mm", "cm", "m", "km", "in", "ft", "yd", "mi"]
     masses = ["Masses:", "mg", "g", "kg", "oz", "lb", "t"]
-    times = ["Times:", "s", "min", "h", "day", "week", "month", "year"]
+    times = ["Times:  ", "s", "min", "h", "day", "week", "month", "year"]
     volumes = ["Volumes:", "mL", "L", "m3", "qt", "gal", "ft3"]
-    areas = ["Areas:", "in2", "ft2", "yd2", "mi2", "m2", "km2"]
+    areas = ["Areas:  ", "in2", "ft2", "yd2", "mi2", "m2", "km2"]
     speeds = ["Speeds:", "m/s", "km/h", "mph"]
-    units = [temps, dists, masses, times, volumes, areas, speeds]
+    units = [header, temps, dists, masses, times, volumes, areas, speeds]
     for unit in units:
         for item in unit:
-            print(item, end=" ")
+            print(f"{prefix}{item}", end=" ")
         print("")
 
 
@@ -35,6 +36,8 @@ def check_cl_args():
             return None, False
         return sys.argv, True
     else:
+        print("Usage: uc <num> <fromUnit> <toUnit>")
+        display_valid_units("\t")
         return None, False
 
 
