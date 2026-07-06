@@ -10,7 +10,7 @@ import test
 
 
 def display_valid_units(prefix=""):
-    header = ["Unit Name    ", "Abbreviations"]
+    header = ["Unit        ", "Options"]
     temps = ["Temperatures:", "f", "c", "k"]
     dists = ["Distances:", "mm", "cm", "m", "km", "in", "ft", "yd", "mi"]
     masses = ["Masses:", "mg", "g", "kg", "oz", "lb", "t"]
